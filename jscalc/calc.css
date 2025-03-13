@@ -1,27 +1,72 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
 }
 
 #calculator {
-    border: 1px solid rgb(187, 183, 183);
-    border-radius: 5px;
-    width: 200px;
-  }
-  
-  #display {
-    margin: 10px;
-    width: 85%;
-    font-size: 25px;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .button {
-    width: 45px;
-    height: 45px;
-    margin: 3px;
-  }
+  border: 2px solid #b3b3b3;
+  border-radius: 10px;
+  width: 220px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+#display {
+  margin: 10px 0;
+  width: 90%;
+  font-size: 28px;
+  padding: 5px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #d1d1d1;
+}
+
+.button:active {
+  background-color: #b3b3b3;
+}
+
+.button:nth-child(4n) { /* Operators */
+  background-color: #ff9800;
+  color: white;
+}
+
+.button:nth-child(4n):hover {
+  background-color: #e68900;
+}
+
+.button:last-child { /* Equals button */
+  background-color: #4caf50;
+  color: white;
+}
+
+.button:last-child:hover {
+  background-color: #43a047;
+}
